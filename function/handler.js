@@ -17,5 +17,7 @@ module.exports = {
         console.log(process.env['CONFIG'])
         console.log(process.env['BASE_URL'])
 
+        console.log("------------------")
+        console.log("Checking if the function gets updated after push")
     }
 }
