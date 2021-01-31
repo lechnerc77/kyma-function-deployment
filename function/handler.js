@@ -19,5 +19,7 @@ module.exports = {
 
         console.log("------------------")
         console.log("Checking if the function gets updated after push")
+        console.log("------------------")
+
     }
 }
