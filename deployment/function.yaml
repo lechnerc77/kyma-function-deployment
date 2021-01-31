@@ -7,7 +7,7 @@ spec:
   type: git
   runtime: nodejs12
   source: function-with-env
-  reference: master
+  reference: main
   baseDir: function
   env:
     - name: CLIENT_ID
