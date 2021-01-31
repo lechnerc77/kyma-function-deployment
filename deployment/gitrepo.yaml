@@ -1,0 +1,7 @@
+apiVersion: serverless.kyma-project.io/v1alpha1
+kind: GitRepository
+metadata:
+  name: function-with-env
+  namespace: function-with-envar
+spec:
+  url: "https://github.com/lechnerc77/kyma-function-deployment.git"

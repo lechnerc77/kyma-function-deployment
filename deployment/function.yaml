@@ -1,0 +1,32 @@
+apiVersion: serverless.kyma-project.io/v1alpha1
+kind: Function
+metadata:
+  name: function-with-env
+  namespace: function-with-envar
+spec:
+  type: git
+  runtime: nodejs12
+  source: function-with-env
+  reference: master
+  baseDir: function
+  env:
+    - name: CLIENT_ID
+      valueFrom:
+        secretKeyRef:
+          key: clientid
+          name: secretforfunction
+    - name: CLIENT_SECRET
+      valueFrom:
+        secretKeyRef:
+          key: clientsecret
+          name: secretforfunction
+    - name: CONFIG
+      valueFrom:
+        configMapKeyRef:
+          key: configone
+          name: configforfunction
+    - name: BASE_URL
+      valueFrom:
+        configMapKeyRef:
+          key: baseurl
+          name: configforfunction
