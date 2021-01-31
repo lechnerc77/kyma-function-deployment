@@ -17,5 +17,6 @@ module.exports = {
         console.log(process.env['CONFIG'])
         console.log(process.env['BASE_URL'])
 
+        console.log("Check reaction to new commit")
     }
 }
